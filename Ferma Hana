@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FermaHana - Fshat, Pula & Gjelat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #2e2e2e;
+      line-height: 1.6;
+      position: relative;
+      z-index: 0;
+      background: none;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: url('https://img.freepik.com/premium-photo/blur-bird-chickens-feather-texture-background_926199-626181.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px);
+      opacity: 0.3;
+      z-index: -1;
+    }
+    header {
+      background-color: #88cc44cc; /* shtova transparencë pak me cc */
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      backdrop-filter: saturate(180%) brightness(120%);
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.2em;
+    }
+    nav {
+      background-color: #336633cc;
+      text-align: center;
+      padding: 15px 0;
+      position: relative;
+      z-index: 1;
+      backdrop-filter: saturate(180%) brightness(120%);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #ffffffcc; /* pak transparencë */
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 1;
+    }
+    section h2 {
+      color: #336633;
+      border-bottom: 3px solid #88cc44;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    .lloji {
+      border: 2px solid #cce0bb;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: #ffffffcc;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 8px rgba(136,204,68,0.3);
+    }
+    .lloji img {
+      max-width: 250px;
+      margin-right: 20px;
+      border-radius: 10px;
+      border: 2px solid #88cc44;
+    }
+    .lloji p {
+      margin: 0;
+      font-size: 1.1em;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 30px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #336633cc;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 50px;
+      position: relative;
+      z-index: 1;
+      backdrop-filter: saturate(180%) brightness(120%);
+      border-radius: 0 0 12px 12px;
+    }
+    .qmimi {
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .img-full {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 15px;
+      border: 3px solid #88cc44;
+    }
+    .btn {
+      background-color: #88cc44;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #669933;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      border: 2px solid #88cc44;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FermaHana 🐔</h1>
+    <p>Fermë e specializuar për pula, gjela, zogj dhe shumë më shumë.</p>
+  </header>
+  <nav>
+    <a href="#shitje">Shitje</a>
+    <a href="#llojet">Llojet</a>
+    <a href="#qmimet">Çmimet</a>
+    <a href="#kontakti">Kontakti</a>
+  </nav>
+  <section id="qmimet">
+    <h2>Çmimet</h2>
+    <p>Zgjedh çka t’ka qefi – çmimet variojnë nga 5€ deri në 50€ bazuar në lloj.</p>
+    <ul>
+      <li>Pula e Bardhë - <span class="qmimi">10€</span> - <a href="#kontakti">Porosit</a> | <a href="#llojet">Shiko Llojin</a></li>
+      <li>Pula e Zezë - <span class="qmimi">12€</span> - <a href="#kontakti">Porosit</a> | <a href="#llojet">Shiko Llojin</a></li>
+      <li>Gjel Deti - <span class="qmimi">30€</span> - <a href="#kontakti">Porosit</a> | <a href="#llojet">Shiko Llojin</a></li>
+      <li>Zogj të Vegjël - <span class="qmimi">5€</span> - <a href="#kontakti">Porosit</a> | <a href="#llojet">Shiko Llojin</a></li>
+      <li>Pula Ekzotike - <span class="qmimi">50€</span> - <a href="#kontakti">Porosit</a> | <a href="#llojet">Shiko Llojin</a></li>
+    </ul>
+    <div class="gallery">
+      <img src="https://th.bing.com/th/id/OIP.7Qa-QG753xj7gHcfzj45rAHaEK?cb=iwc2&rs=1&pid=ImgDetMain" alt="Pulë 1">
+      <img src="https://wallpaperaccess.com/full/3201144.jpg" alt="Pulë 2">
+      <img src="https://wallpapercave.com/wp/wp1828419.jpg" alt="Pulë 3">
+      <img src="https://th.bing.com/th/id/R.b457dee63def927c061457d7e0e0a7ce?rik=rsz9Lj6aNbg4nA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1828509.jpg&ehk=HrJzk%2bAdG3jV3smaeSLyC3hhCSsNVcxRIf%2fZUHAPe8Q%3d&risl=&pid=ImgRaw&r=0" alt="Pulë 4">
+      <img src="https://th.bing.com/th/id/OIP.Hb5O1g-lpZ4R8tuYjc931QHaFK?cb=iwc2&rs=1&pid=ImgDetMain" alt="Pulë 5">
+      <img src="https://cdn.agronomag.com/wp-content/uploads/2021/10/Welsummer-Rooster-768x575.jpg" alt="Pulë 6">
+      <img src="https://th.bing.com/th/id/OIP.aZkkCVeK1OAv9uGV1VF0dAHaHC?cb=iwc2&w=600&h=570&rs=1&pid=ImgDetMain" alt="Pulë 7">
+    </div>
+  </section>
+  <section id="kontakti">
+    <h2>Na Kontakto</h2>
